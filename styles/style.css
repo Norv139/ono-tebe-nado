@@ -1,16 +1,14 @@
 .header {
   position: relative;
   min-height: 19px;
-  padding: 95px 49px 92px 51px;
+  padding: 90px 49px 85px 51px;
 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+
   align-items: center;
 }
 
-.header__menu {
-  margin-top: 5px;
-}
 .header__links-list {
   display: flex;
   gap: 32px;
@@ -37,14 +35,10 @@
 }
 
 .header__logo {
-  position: relative;
+  margin: 2px 0 0 calc(23% + 5px);
+  display: block;
 }
 .header__logo-image {
-  position: absolute;
-  top: -50px;
-  left: -148px;
-  z-index: 1;
-
   width: 148px;
   height: 105px;
 }
@@ -220,7 +214,7 @@
 
   padding: 0 40px;
   padding-top: 52px;
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .card_type_film {
@@ -281,14 +275,14 @@
 /*  */
 
 .about {
+  display: grid;
+  grid-template-columns: 430px auto;
+
   margin-top: 181px;
   margin-bottom: 90px;
   padding: 0 50px;
-  display: flex;
-  gap: 25px;
-}
 
-.about__column {
+  gap: 25px;
 }
 
 .about__logo {
@@ -299,7 +293,8 @@
   background-color: #000;
 
   padding: 63px 46px;
-  margin: 0 95px;
+
+  justify-self: center;
 }
 .about__logo-image {
   width: 148px;
@@ -352,8 +347,7 @@
   justify-content: center;
   align-items: center;
 }
-.footer__menu-list-item {
-}
+
 .footer__menu-link {
   cursor: pointer;
   text-decoration-line: underline;
@@ -370,8 +364,7 @@
   justify-content: space-between;
   width: 240px;
 }
-.footer__social-list-item {
-}
+
 .footer__social-link {
   cursor: pointer;
 }
