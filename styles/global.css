@@ -32,3 +32,7 @@ a {
 img {
   width: 100%;
 }
+
+address{
+  word-wrap: normal;
+}
