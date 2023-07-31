@@ -1,7 +1,3 @@
-.mt-25 {
-  margin-top: 25px;
-}
-
 .header {
   position: relative;
   padding: 90px 49px 85px 51px;
@@ -272,6 +268,7 @@
   min-height: 114px;
 }
 
+
 .about__title {
   margin-top: 100px;
   margin-bottom: 97px;
@@ -283,6 +280,7 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
 .about__text {
   color: #000;
   font-family: "Raleway", sans-serif; 
@@ -290,6 +288,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.about__text span:nth-child(n+2){
+  display: block;
+  margin-top: 25px;
 }
 
 /*  */
@@ -318,6 +321,9 @@
   align-items: center;
   list-style-type: none;
 }
+.footer__social-list-item{
+  min-width: 48px;
+}
 
 .footer__menu-link {
   cursor: pointer;
@@ -342,6 +348,5 @@
 }
 
 .footer__social-icon {
-  min-width: 48px;
-  min-height: 48px;
+  max-width: 48px;
 }
